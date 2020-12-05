@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>
+                foody
+            </h1>
+            <aside class="large">
+                <a href="#">Login</a>
+                <a href="#">SignUp</a>
+            </aside>
+
+            <aside class="small" id="menu" onclick="showmenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none"
+                    stroke="#333" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-menu">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </aside>
+
+            <main id="main">
+                <div>
+                    <h1>
+                        foody
+                        <svg  onclick="hidemenu()" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-x">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </h1>
+                </div>
+
+                <article>
+                    <a href="#">Login</a>
+                    <a href="#">SignUp</a>
+                </article>
+            </main>
+
+        </nav>
+
+        <article>
+            Discover the <br> Best Food<br> and Drinks
+        </article>
+
+        <div>
+            <input type="text" placeholder="search restraunts and hotles near you">
+        </div>
+    </header>
+
+
+    <section id='deals'>
+        <h1>Our Best Deals</h1>
+
+        <main>
+            <div>
+                <img src="./images/img2.jpg" alt="img1">
+                <h2>Get 20% off on your first order</h2>
+            </div>
+
+            <div>
+                <img src="./images/img3.jpg" alt="img1">
+                <h2>Get 20-25% off on today's deals</h2>
+            </div>
+
+            <div>
+                <img src="./images/img4.jpg" alt="img1">
+                <h2>Get 30% off on vouchers</h2>
+            </div>
+        </main>
+
+    </section>
+
+    <section id="area">
+        <h1>Restraunts in your area</h1>
+        <main>
+            <div>
+                <img src="./images/img5.jpg" alt="img">
+                <aside>
+                    <h2>Icy Day</h2>
+                    <h3>Open 9am - 10pm</h3>
+                    <button>Show Details</button>
+                </aside>
+            </div>
+
+            <div>
+                <img src="./images/img6.jpg" alt="img">
+                <aside>
+                    <h2>Pancake House</h2>
+                    <h3>Open 10am - 10pm</h3>
+                    <button>Show Details</button>
+                </aside>
+            </div>
+
+            <div>
+                <img src="./images/img7.jpg" alt="img">
+                <aside>
+                    <h2>Desi House</h2>
+                    <h3>Open 8am - 9pm</h3>
+                    <button>Show Details</button>
+                </aside>
+            </div>
+        </main>
+    </section>
+
+    <section id="review">
+        <h1>Our Top Reviews</h1>
+
+        <main>
+            <div>
+                <aside>
+                    <img src="./images/img8.jpg" alt="img">
+                    <article>
+                        <h2>Anna</h2>
+                        <h3><span>⚫</span>&nbsp;10&nbsp;reviews</h3>
+                    </article>
+                </aside>
+                <button>See review</button>
+            </div>
+
+            <div>
+                <aside>
+                    <img src="./images/img8.jpg" alt="img">
+                    <article>
+                        <h2>Suzy</h2>
+                        <h3><span>⚫</span>&nbsp;5&nbsp;reviews</h3>
+                    </article>
+                </aside>
+                <button>See review</button>
+            </div>
+        </main>
+
+        <button>More Reviews</button>
+    </section>
+
+
+    <footer>
+        <h1>foody</h1>
+        <main>
+            <div>
+                <h2>company</h2>
+                <h3><a href="#">blog</a></h3>
+                <h3><a href="#">career</a></h3>
+                <h3><a href="#">contact</a></h3>
+            </div>
+
+            <div>
+                <h2>for foodies</h2>
+                <h3><a href="#">community</a></h3>
+                <h3><a href="#">developers</a></h3>
+                <h3><a href="#">mobile app</a></h3>
+            </div>
+
+            <div>
+                <h2>for restraunts</h2>
+                <h3><a href="#">add restraunts</a></h3>
+                <h3><a href="#">business app</a></h3>
+                <h3><a href="#">priducts</a></h3>
+            </div>
+
+            <div>
+                <h2>for you</h2>
+                <h3><a href="#">privacy</a></h3>
+                <h3><a href="#">terms</a></h3>
+                <h3><a href="#">security</a></h3>
+            </div>
+        </main>
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>

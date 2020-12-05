@@ -1,0 +1,664 @@
+@import url("https://fonts.googleapis.com/css2?family=Salsa&display=swap");
+@font-face {
+  font-family: sansation;
+  src: url(./fonts/Sansation_Regular.ttf);
+}
+
+@font-face {
+  font-family: sansationlight;
+  src: url(./fonts/Sansation_Light.ttf);
+}
+
+button {
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+*, body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.small {
+  display: none;
+}
+
+header {
+  background: url(./images/img1.jpg) no-repeat;
+  background-size: cover;
+  padding: 1%;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 2%;
+}
+
+header nav main {
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
+  top: -100%;
+  left: 0;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+
+header nav main div h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 0 5%;
+}
+
+header nav main article {
+  height: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 50px;
+}
+
+header nav main article a {
+  color: #000;
+  text-shadow: none;
+}
+
+header nav h1 {
+  font-size: 50px;
+  font-family: Cacmbria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header nav a {
+  font-size: 30px;
+  font-family: 'Salsa', cursive;
+  color: #fff;
+  text-decoration: none;
+  padding: 0 20px;
+}
+
+header article {
+  font-size: 60px;
+  font-family: sansation;
+  color: #fff;
+  font-weight: bolder;
+  padding: 5% 2%;
+  letter-spacing: 0.1em;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.7);
+}
+
+header div {
+  padding: 3% 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header div input {
+  padding: 1% 2%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  border: none;
+  font-size: 30px;
+}
+
+header div input:focus {
+  outline: none;
+  border: none;
+}
+
+::-webkit-input-placeholder {
+  font-family: sansation !important;
+  color: #000;
+  font-size: 30px;
+}
+
+:-ms-input-placeholder {
+  font-family: sansation !important;
+  color: #000;
+  font-size: 30px;
+}
+
+::-ms-input-placeholder {
+  font-family: sansation !important;
+  color: #000;
+  font-size: 30px;
+}
+
+::placeholder {
+  font-family: sansation !important;
+  color: #000;
+  font-size: 30px;
+}
+
+#deals {
+  padding: 3% 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #EEFBFF;
+}
+
+#deals h1 {
+  font-size: 50px;
+  font-family: sansationlight;
+  text-align: center;
+  font-weight: 500;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-bottom: 2px solid #000;
+}
+
+#deals main {
+  padding: 5% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 70px;
+}
+
+#deals main div {
+  width: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 4px 5px -1px rgba(145, 145, 145, 0.75);
+          box-shadow: 4px 4px 5px -1px rgba(145, 145, 145, 0.75);
+}
+
+#deals main div img {
+  border-radius: 10px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+#deals main div h2 {
+  font-size: 30px;
+  font-family: sansationlight;
+  padding: 3% 5%;
+}
+
+#area {
+  padding: 3% 2% 1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #EEFBFF;
+}
+
+#area h1 {
+  font-size: 50px;
+  font-family: sansationlight;
+  text-align: center;
+  font-weight: 500;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-bottom: 2px solid #000;
+}
+
+#area main {
+  padding: 5% 0;
+}
+
+#area main div {
+  min-width: 50vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: inherit;
+  background-color: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 4px 5px -1px rgba(145, 145, 145, 0.75);
+          box-shadow: 4px 4px 5px -1px rgba(145, 145, 145, 0.75);
+  padding: 2%;
+  margin-bottom: 5%;
+}
+
+#area main div img {
+  width: 250px;
+  width: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+
+#area main div aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 15px;
+  padding: 0 5%;
+  font-family: sansationlight;
+}
+
+#area main div aside h3 {
+  width: 100%;
+}
+
+#area main div aside button {
+  background-color: #FDB8B8;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 18px;
+  width: 100%;
+  border: none;
+  font-family: sansation;
+}
+
+footer {
+  background-color: #fff;
+  padding: 2% 5%;
+}
+
+footer h1 {
+  font-size: 50px;
+  font-family: Cacmbria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+footer main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer main div {
+  padding: 2% 0;
+}
+
+footer main div h2 {
+  font-family: sansationlight;
+  margin-bottom: 10%;
+  font-size: 30px;
+}
+
+footer main div h3 {
+  font-family: sansationlight;
+  margin-bottom: 5%;
+  font-size: 25px;
+}
+
+footer main div h3 a {
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--mainColor)), to(var(--mainColor)));
+  background: linear-gradient(to bottom, var(--mainColor) 0%, var(--mainColor) 100%);
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 3px 3px;
+  color: #777 !important;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+
+footer main div h3 a:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23ff9800' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: 0 100%;
+  background-size: auto 6px;
+  background-repeat: repeat-x;
+  text-decoration: none;
+}
+
+#review {
+  padding: 0% 2% 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #EEFBFF;
+}
+
+#review button {
+  background-color: #FDB8B8;
+  border-radius: 10px;
+  font-size: 20px;
+  border: none;
+  font-family: sansation;
+  font-weight: bolder;
+  padding: 1% 2%;
+}
+
+#review h1 {
+  font-size: 50px;
+  font-family: sansationlight;
+  text-align: center;
+  font-weight: 500;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-bottom: 2px solid #000;
+  margin-bottom: 5%;
+}
+
+#review main {
+  padding: 2%;
+}
+
+#review main div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 50vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin-bottom: 5%;
+}
+
+#review main div aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#review main div aside img {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+#review main div aside article {
+  padding: 7%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 15px;
+}
+
+#review main div aside article h2 {
+  font-size: 30px;
+  font-family: sansationlight;
+}
+
+#review main div aside article h3 {
+  font-size: 20px;
+  font-family: sansationlight;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#review main div aside article h3 span {
+  font-size: 10px;
+}
+
+#review main div button {
+  padding: 2% 5%;
+}
+
+@media screen and (max-width: 786px) {
+  #review {
+    padding: 0% 2% 15%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #EEFBFF;
+  }
+  #review button {
+    padding: 3% 5%;
+  }
+  #review h1 {
+    font-size: 30px;
+    font-family: sansation;
+    margin-bottom: 10%;
+    font-weight: bolder;
+  }
+  #review main {
+    padding: 0 2% 7% 2%;
+  }
+  #review main div {
+    min-width: 90vw;
+    margin-bottom: 10%;
+  }
+  #review main div aside article h2 {
+    font-size: 25px;
+    font-family: sansationlight;
+  }
+  #review main div aside article h3 {
+    font-size: 18px;
+    font-family: sansationlight;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #review main div button {
+    padding: 3% 5%;
+  }
+  footer {
+    padding: 5% 7%;
+  }
+  footer h1 {
+    padding-bottom: 5%;
+  }
+  footer main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  #area {
+    padding: 5% 2%;
+  }
+  #area h1 {
+    font-size: 35px;
+    font-weight: bolder;
+  }
+  #area main {
+    padding-top: 7%;
+  }
+  #area main div {
+    width: 95vw;
+    margin-bottom: 7%;
+  }
+  #area main div img {
+    width: 200px;
+    height: 150px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 10px;
+  }
+  #deals {
+    padding: 5%;
+  }
+  #deals h1 {
+    font-size: 40px;
+    margin-bottom: 7%;
+    font-weight: bolder;
+  }
+  #deals main {
+    gap: 50px;
+  }
+  #deals main div h2 {
+    font-size: 25px;
+  }
+  ::-webkit-input-placeholder {
+    font-family: sansation !important;
+    color: #000;
+    font-size: 18px;
+  }
+  :-ms-input-placeholder {
+    font-family: sansation !important;
+    color: #000;
+    font-size: 18px;
+  }
+  ::-ms-input-placeholder {
+    font-family: sansation !important;
+    color: #000;
+    font-size: 18px;
+  }
+  ::placeholder {
+    font-family: sansation !important;
+    color: #000;
+    font-size: 18px;
+  }
+  header {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 1%;
+    background-position: 25%;
+  }
+  header nav h1 {
+    font-size: 40px;
+  }
+  header article {
+    font-size: 45px;
+    letter-spacing: normal;
+    padding: 15% 2%;
+  }
+  header div {
+    padding: 5% 2%;
+  }
+  header div input {
+    font-size: 18px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 2%;
+  }
+  .large {
+    display: none;
+  }
+  .small {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+/*# sourceMappingURL=index.css.map */
